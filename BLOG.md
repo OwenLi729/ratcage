@@ -1,0 +1,1 @@
+Short writeups on cool things I found/learned from my experimentation
