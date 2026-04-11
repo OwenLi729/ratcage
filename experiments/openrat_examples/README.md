@@ -45,7 +45,10 @@ python experiments/openrat_examples/custom_tool_ollama.py
 python experiments/openrat_examples/local_executor_probe.py
 ```
 
-## Local executor note
+## Local executor (v0.1.1)
 
-In your installed Openrat version, `executor='local'` is not supported.
-`local_executor_probe.py` verifies this behavior explicitly and reports it as expected.
+The `LocalExecutor` is available:
+- On **Linux**: local executor works with resource limits
+- On **macOS**: local executor available but resource limit preexec_fn fails
+
+`local_executor_probe.py` detects and reports this correctly.
